@@ -1,0 +1,7 @@
+Create.
+
+Read (All and One).
+
+Update.
+
+Delete.
