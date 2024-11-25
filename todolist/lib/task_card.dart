@@ -1,10 +1,11 @@
 // task_card.dart
 import 'package:flutter/material.dart';
+import 'package:todolist/models/task.dart';
 
 class TaskCard extends StatelessWidget {
-  final String title;
+  final Task task;
 
-  TaskCard({required this.title});
+  const TaskCard({super.key, required this.task});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +15,8 @@ class TaskCard extends StatelessWidget {
       color: Colors.blue,
       alignment: Alignment.center,
       child: Text(
-        title,
-        style: TextStyle(
+        task.title!,
+        style: const TextStyle(
           color: Colors.black,
           fontSize: 20,
           fontWeight: FontWeight.bold,
